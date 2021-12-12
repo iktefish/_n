@@ -5,6 +5,6 @@
   "vscode-css-languageserver-bin",
   "diagnostic-languageserver",
   "emmet-ls",
-  "eslint_d",
-  "prettier"
+  "prettier",
+  "eslint_d"
 ]

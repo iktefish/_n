@@ -2037,6 +2037,24 @@ in
     bypassCache = true;
     reconstructLock = true;
   };
+  prettier = nodeEnv.buildNodePackage {
+    name = "prettier";
+    packageName = "prettier";
+    version = "2.5.1";
+    src = fetchurl {
+      url = "https://registry.npmjs.org/prettier/-/prettier-2.5.1.tgz";
+      sha512 = "vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==";
+    };
+    buildInputs = globalBuildInputs;
+    meta = {
+      description = "Prettier is an opinionated code formatter";
+      homepage = "https://prettier.io";
+      license = "MIT";
+    };
+    production = true;
+    bypassCache = true;
+    reconstructLock = true;
+  };
   eslint_d = nodeEnv.buildNodePackage {
     name = "eslint_d";
     packageName = "eslint_d";
@@ -2195,24 +2213,6 @@ in
     meta = {
       description = "Makes eslint the fastest linter on the planet";
       homepage = "https://github.com/mantoni/eslint_d.js";
-      license = "MIT";
-    };
-    production = true;
-    bypassCache = true;
-    reconstructLock = true;
-  };
-  prettier = nodeEnv.buildNodePackage {
-    name = "prettier";
-    packageName = "prettier";
-    version = "2.5.1";
-    src = fetchurl {
-      url = "https://registry.npmjs.org/prettier/-/prettier-2.5.1.tgz";
-      sha512 = "vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==";
-    };
-    buildInputs = globalBuildInputs;
-    meta = {
-      description = "Prettier is an opinionated code formatter";
-      homepage = "https://prettier.io";
       license = "MIT";
     };
     production = true;
