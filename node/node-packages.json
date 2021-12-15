@@ -4,7 +4,8 @@
   "vscode-html-languageserver-bin",
   "vscode-css-languageserver-bin",
   "diagnostic-languageserver",
-  "emmet-ls",
   "prettier",
+  "emmet-ls",
+  "eslint",
   "eslint_d"
 ]
