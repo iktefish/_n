@@ -7,5 +7,6 @@
   "prettier",
   "emmet-ls",
   "eslint",
-  "eslint_d"
+  "eslint_d",
+  "discord.js"
 ]
