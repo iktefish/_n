@@ -5,5 +5,9 @@
   "vscode-css-languageserver-bin",
   "emmet-ls",
   "prettier",
-  "eslint"
+  "eslint",
+  "elm",
+  "elm-test",
+  "elm-format",
+  "@elm-tooling/elm-language-server"
 ]
