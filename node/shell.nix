@@ -6,7 +6,6 @@ in stdenv.mkDerivation {
     name = "nodeNix";
     buildInputs = [
         nodeNix.typescript-language-server
-        nodeNix.diagnostic-languageserver
         nodeNix.emmet-ls
         nodeNix.prettier
         nodeNix.eslint
