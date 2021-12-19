@@ -5,6 +5,7 @@ let nodeNix = import ~/Arcane/_n/node/default.nix {};
 in stdenv.mkDerivation {
     name = "nodeNix";
     buildInputs = [
+        nodeNix.typescript
         nodeNix.typescript-language-server
         nodeNix.emmet-ls
         nodeNix.prettier
