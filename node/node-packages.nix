@@ -85,22 +85,22 @@ let
         sha512 = "oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==";
       };
     };
-    "@types/node-16.11.14" = {
+    "@types/node-16.11.19" = {
       name = "_at_types_slash_node";
       packageName = "@types/node";
-      version = "16.11.14";
+      version = "16.11.19";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/node/-/node-16.11.14.tgz";
-        sha512 = "mK6BKLpL0bG6v2CxHbm0ed6RcZrAtTHBTd/ZpnlVPVa3HkumsqLE4BC4u6TQ8D7pnrRbOU0am6epuALs+Ncnzw==";
+        url = "https://registry.npmjs.org/@types/node/-/node-16.11.19.tgz";
+        sha512 = "BPAcfDPoHlRQNKktbsbnpACGdypPFBuX4xQlsWDE7B8XXcfII+SpOLay3/qZmCLb39kV5S1RTYwXdkx2lwLYng==";
       };
     };
-    "acorn-8.6.0" = {
+    "acorn-8.7.0" = {
       name = "acorn";
       packageName = "acorn";
-      version = "8.6.0";
+      version = "8.7.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/acorn/-/acorn-8.6.0.tgz";
-        sha512 = "U1riIR+lBSNi3IbxtaHOIKdH8sLFv3NYfNv8sg7ZsNhcfl4HF2++BfqqrNAxoCLQW1iiylOj76ecnaUxz+z9yw==";
+        url = "https://registry.npmjs.org/acorn/-/acorn-8.7.0.tgz";
+        sha512 = "V/LGr1APy+PXIwKebEWrkZPwoeoF+w1jiOBUmuxuiUIaOHtob8Qc9BTrYo7VuI5fR8tqsy+buA2WFooR5olqvQ==";
       };
     };
     "acorn-jsx-5.3.2" = {
@@ -589,13 +589,13 @@ let
         sha512 = "yWJFpu4DtjsWKkt5GeNBBuZMlNcYVs6vRCLoCVEJrTjaSB6LC98gFipNK/erM2Heg/E8mIK+hXG/pJMLK+eRZA==";
       };
     };
-    "espree-9.2.0" = {
+    "espree-9.3.0" = {
       name = "espree";
       packageName = "espree";
-      version = "9.2.0";
+      version = "9.3.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/espree/-/espree-9.2.0.tgz";
-        sha512 = "oP3utRkynpZWF/F2x/HZJ+AGtnIclaR7z1pYPxy7NYM2fSO6LgK/Rkny8anRSPK/VwEA1eqm2squui0T7ZMOBg==";
+        url = "https://registry.npmjs.org/espree/-/espree-9.3.0.tgz";
+        sha512 = "d/5nCsb0JcqsSEeQzFZ8DH1RmxPcglRWh24EFTlUEmCKoehXGdpsx0RkHDubqUI8LSAIKMQp4r9SzQ3n+sm4HQ==";
       };
     };
     "esquery-1.4.0" = {
@@ -886,13 +886,13 @@ let
         sha512 = "9O4MVG9ioZJ08ffbcyVYyLOJLk5JQ688pJ4eMGLpdWLHq/Wr1D9BlriLQyL0E+jbkuePVZXYFj47QM/v093wHg==";
       };
     };
-    "graceful-fs-4.2.8" = {
+    "graceful-fs-4.2.9" = {
       name = "graceful-fs";
       packageName = "graceful-fs";
-      version = "4.2.8";
+      version = "4.2.9";
       src = fetchurl {
-        url = "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.8.tgz";
-        sha512 = "qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==";
+        url = "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.9.tgz";
+        sha512 = "NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==";
       };
     };
     "har-schema-2.0.0" = {
@@ -949,13 +949,13 @@ let
         sha512 = "cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==";
       };
     };
-    "ignore-5.1.9" = {
+    "ignore-5.2.0" = {
       name = "ignore";
       packageName = "ignore";
-      version = "5.1.9";
+      version = "5.2.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/ignore/-/ignore-5.1.9.tgz";
-        sha512 = "2zeMQpbKz5dhZ9IwL0gbxSW5w0NK/MSAMtNuhgIHEPmaU3vPdKPL0UdvUCXs5SS4JAwsBxysK5sFMW8ocFiVjQ==";
+        url = "https://registry.npmjs.org/ignore/-/ignore-5.2.0.tgz";
+        sha512 = "CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==";
       };
     };
     "import-fresh-3.3.0" = {
@@ -1480,13 +1480,13 @@ let
         sha1 = "6309f4e0e5fa913ec1c69307ae364b4b377c9e7b";
       };
     };
-    "picomatch-2.3.0" = {
+    "picomatch-2.3.1" = {
       name = "picomatch";
       packageName = "picomatch";
-      version = "2.3.0";
+      version = "2.3.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/picomatch/-/picomatch-2.3.0.tgz";
-        sha512 = "lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==";
+        url = "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz";
+        sha512 = "JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==";
       };
     };
     "pjson-1.0.9" = {
@@ -1822,13 +1822,13 @@ let
         sha1 = "717b8f220cc0bb7b44e40514c22b2e8bbc70d8b9";
       };
     };
-    "ts-debounce-3.0.0" = {
+    "ts-debounce-4.0.0" = {
       name = "ts-debounce";
       packageName = "ts-debounce";
-      version = "3.0.0";
+      version = "4.0.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/ts-debounce/-/ts-debounce-3.0.0.tgz";
-        sha512 = "7jiRWgN4/8IdvCxbIwnwg2W0bbYFBH6BxFqBjMKk442t7+liF2Z1H6AUCcl8e/pD93GjPru+axeiJwFmRww1WQ==";
+        url = "https://registry.npmjs.org/ts-debounce/-/ts-debounce-4.0.0.tgz";
+        sha512 = "+1iDGY6NmOGidq7i7xZGA4cm8DAa6fqdYcvO5Z6yBevH++Bdo9Qt/mN0TzHUgcCcKv1gmh9+W5dHqz8pMWbCbg==";
       };
     };
     "tslib-1.14.1" = {
@@ -2038,15 +2038,6 @@ let
         sha512 = "N8bOS8i0xuQMn/y0bijyefDbOsMl6hiH6LDREYWavTLTM5jbj44EiQfStsbmAv/0eaFKkL/jf5hW7nWwBy2HBw==";
       };
     };
-    "vscode-languageserver-textdocument-1.0.2" = {
-      name = "vscode-languageserver-textdocument";
-      packageName = "vscode-languageserver-textdocument";
-      version = "1.0.2";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/vscode-languageserver-textdocument/-/vscode-languageserver-textdocument-1.0.2.tgz";
-        sha512 = "T7uPC18+f8mYE4lbVZwb3OSmvwTZm3cuFhrdx9Bn2l11lmp3SvSuSVjy2JtvrghzjAo4G6Trqny2m9XGnFnWVA==";
-      };
-    };
     "vscode-languageserver-textdocument-1.0.3" = {
       name = "vscode-languageserver-textdocument";
       packageName = "vscode-languageserver-textdocument";
@@ -2092,22 +2083,22 @@ let
         sha512 = "obtSWTlbJ+a+TFRYGaUumtVwb+InIUVI0Lu0VBUAPmj2cU5JutEXg3xUE0c2J5Tcy7h2DEKVJBFi+Y9ZSFzzPQ==";
       };
     };
-    "vscode-uri-3.0.2" = {
+    "vscode-uri-3.0.3" = {
       name = "vscode-uri";
       packageName = "vscode-uri";
-      version = "3.0.2";
+      version = "3.0.3";
       src = fetchurl {
-        url = "https://registry.npmjs.org/vscode-uri/-/vscode-uri-3.0.2.tgz";
-        sha512 = "jkjy6pjU1fxUvI51P+gCsxg1u2n8LSt0W6KrCNQceaziKzff74GoWmjVG46KieVzybO1sttPQmYfrwSHey7GUA==";
+        url = "https://registry.npmjs.org/vscode-uri/-/vscode-uri-3.0.3.tgz";
+        sha512 = "EcswR2S8bpR7fD0YPeS7r2xXExrScVMxg4MedACaWHEtx9ftCF/qHG1xGkolzTPcEmjTavCQgbVzHUIdTMzFGA==";
       };
     };
-    "web-tree-sitter-0.19.4" = {
+    "web-tree-sitter-0.20.2" = {
       name = "web-tree-sitter";
       packageName = "web-tree-sitter";
-      version = "0.19.4";
+      version = "0.20.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/web-tree-sitter/-/web-tree-sitter-0.19.4.tgz";
-        sha512 = "8G0xBj05hqZybCqBtW7RPZ/hWEtP3DiLTauQzGJZuZYfVRgw7qj7iaZ+8djNqJ4VPrdOO+pS2dR1JsTbsLxdYg==";
+        url = "https://registry.npmjs.org/web-tree-sitter/-/web-tree-sitter-0.20.2.tgz";
+        sha512 = "beDt3JEETNzl4pBtpLuaVc36LAfkOouFZFktTVmY1g2Wjy+IPk2Zif1KCUhbyXtOx3khXtRViG99b0zqtbfW1A==";
       };
     };
     "which-2.0.2" = {
@@ -2208,8 +2199,8 @@ in
       sources."glob-7.2.0"
       sources."glob-parent-5.1.2"
       sources."globby-11.0.4"
-      sources."graceful-fs-4.2.8"
-      sources."ignore-5.1.9"
+      sources."graceful-fs-4.2.9"
+      sources."ignore-5.2.0"
       sources."indent-string-4.0.0"
       sources."inflight-1.0.6"
       sources."inherits-2.0.4"
@@ -2235,7 +2226,7 @@ in
       sources."path-exists-3.0.0"
       sources."path-is-absolute-1.0.1"
       sources."path-type-4.0.0"
-      sources."picomatch-2.3.0"
+      sources."picomatch-2.3.1"
       sources."pkg-up-3.1.0"
       sources."queue-microtask-1.2.3"
       sources."reusify-1.0.4"
@@ -2254,7 +2245,7 @@ in
       sources."vscode-languageserver-protocol-3.16.0"
       sources."vscode-languageserver-textdocument-1.0.3"
       sources."vscode-languageserver-types-3.16.0"
-      sources."vscode-uri-3.0.2"
+      sources."vscode-uri-3.0.3"
       sources."which-2.0.2"
       sources."wrappy-1.0.2"
       sources."yallist-4.0.0"
@@ -2346,7 +2337,7 @@ in
       sources."@emmetio/abbreviation-2.2.2"
       sources."@emmetio/css-abbreviation-2.1.4"
       sources."@emmetio/scanner-1.0.0"
-      sources."@types/node-16.11.14"
+      sources."@types/node-16.11.19"
       sources."emmet-2.3.5"
       sources."typescript-4.5.4"
       sources."vscode-jsonrpc-6.0.0"
@@ -2386,16 +2377,16 @@ in
   eslint = nodeEnv.buildNodePackage {
     name = "eslint";
     packageName = "eslint";
-    version = "8.5.0";
+    version = "8.6.0";
     src = fetchurl {
-      url = "https://registry.npmjs.org/eslint/-/eslint-8.5.0.tgz";
-      sha512 = "tVGSkgNbOfiHyVte8bCM8OmX+xG9PzVG/B4UCF60zx7j61WIVY/AqJECDgpLD4DbbESD0e174gOg3ZlrX15GDg==";
+      url = "https://registry.npmjs.org/eslint/-/eslint-8.6.0.tgz";
+      sha512 = "UvxdOJ7mXFlw7iuHZA4jmzPaUqIw54mZrv+XPYKNbKdLR0et4rf60lIZUU9kiNtnzzMzGWxMV+tQ7uG7JG8DPw==";
     };
     dependencies = [
       sources."@eslint/eslintrc-1.0.5"
       sources."@humanwhocodes/config-array-0.9.2"
       sources."@humanwhocodes/object-schema-1.2.1"
-      sources."acorn-8.6.0"
+      sources."acorn-8.7.0"
       sources."acorn-jsx-5.3.2"
       sources."ajv-6.12.6"
       sources."ansi-colors-4.1.1"
@@ -2422,7 +2413,7 @@ in
         ];
       })
       sources."eslint-visitor-keys-3.1.0"
-      sources."espree-9.2.0"
+      sources."espree-9.3.0"
       sources."esquery-1.4.0"
       sources."esrecurse-4.3.0"
       sources."estraverse-5.3.0"
@@ -2588,7 +2579,7 @@ in
       sources."fsevents-2.3.2"
       sources."glob-7.2.0"
       sources."glob-parent-5.1.2"
-      sources."graceful-fs-4.2.8"
+      sources."graceful-fs-4.2.9"
       sources."has-flag-4.0.0"
       sources."inflight-1.0.6"
       sources."inherits-2.0.4"
@@ -2602,7 +2593,7 @@ in
       sources."once-1.4.0"
       sources."path-is-absolute-1.0.1"
       sources."path-key-3.1.1"
-      sources."picomatch-2.3.0"
+      sources."picomatch-2.3.1"
       sources."readdirp-3.6.0"
       sources."rimraf-3.0.2"
       sources."shebang-command-2.0.0"
@@ -2713,10 +2704,10 @@ in
   "@elm-tooling/elm-language-server" = nodeEnv.buildNodePackage {
     name = "_at_elm-tooling_slash_elm-language-server";
     packageName = "@elm-tooling/elm-language-server";
-    version = "2.3.0";
+    version = "2.4.0";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@elm-tooling/elm-language-server/-/elm-language-server-2.3.0.tgz";
-      sha512 = "j5EYk1FVsRk54mQt4bRzODq4o+2RnklW9UlTQI3xvkPsIXM1wrjGcTZF0fVBWjRN/QulYQgrQAFrNZ8iTp71sg==";
+      url = "https://registry.npmjs.org/@elm-tooling/elm-language-server/-/elm-language-server-2.4.0.tgz";
+      sha512 = "jGK8tQqA2HI4+f8uiUNk76Z0YbnfDQqy5g9/tJ2ung0f4Xd3WapJQBeAKFIniOAnRYwhL3EP8S25XThFp0bWiw==";
     };
     dependencies = [
       sources."@nodelib/fs.scandir-2.1.5"
@@ -2740,7 +2731,7 @@ in
       sources."glob-parent-5.1.2"
       sources."globby-11.0.4"
       sources."human-signals-2.1.0"
-      sources."ignore-5.1.9"
+      sources."ignore-5.2.0"
       sources."is-binary-path-2.1.0"
       sources."is-extglob-2.1.1"
       sources."is-glob-4.0.3"
@@ -2756,7 +2747,7 @@ in
       sources."onetime-5.1.2"
       sources."path-key-3.1.1"
       sources."path-type-4.0.0"
-      sources."picomatch-2.3.0"
+      sources."picomatch-2.3.1"
       sources."pjson-1.0.9"
       sources."queue-microtask-1.2.3"
       sources."readdirp-3.6.0"
@@ -2769,16 +2760,16 @@ in
       sources."slash-3.0.0"
       sources."strip-final-newline-2.0.0"
       sources."to-regex-range-5.0.1"
-      sources."ts-debounce-3.0.0"
+      sources."ts-debounce-4.0.0"
       sources."tslib-1.14.1"
       sources."tsyringe-4.6.0"
       sources."vscode-jsonrpc-6.0.0"
       sources."vscode-languageserver-7.0.0"
       sources."vscode-languageserver-protocol-3.16.0"
-      sources."vscode-languageserver-textdocument-1.0.2"
+      sources."vscode-languageserver-textdocument-1.0.3"
       sources."vscode-languageserver-types-3.16.0"
-      sources."vscode-uri-3.0.2"
-      sources."web-tree-sitter-0.19.4"
+      sources."vscode-uri-3.0.3"
+      sources."web-tree-sitter-0.20.2"
       sources."which-2.0.2"
     ];
     buildInputs = globalBuildInputs;
