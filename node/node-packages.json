@@ -1,13 +1,3 @@
 [
-  "typescript",
-  "typescript-language-server",
-  "vscode-html-languageserver-bin",
-  "vscode-css-languageserver-bin",
-  "emmet-ls",
-  "prettier",
-  "eslint",
-  "elm",
-  "elm-test",
-  "elm-format",
-  "@elm-tooling/elm-language-server"
+  "emmet-ls"
 ]

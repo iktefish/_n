@@ -1,20 +1,19 @@
-with import <nixpkgs> {};
-let 
+with import <nixpkgs> { };
+let
   unstableTarball =
     fetchTarball
       https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz;
-  pkgsUnstable = import unstableTarball {};
-  nodeNix = import ~/Arcane/_n/node/default.nix {};
-  nix-convert = pkgs.writeShellScriptBin ''nix-convert'' ''nix-shell -p nodePackages.node2nix --command "node2nix -i ./node-packages.json -o ./node-packages.nix"'';
+  pkgsUnstable = import unstableTarball { };
+  nix-convert = pkgs.writeShellScriptBin ''nix-convert'' ''node2nix -i ./node-packages.json -o ./node-packages.nix'';
 
-in stdenv.mkDerivation {
+in
+stdenv.mkDerivation {
   name = "nodeNix";
   buildInputs = with pkgsUnstable; [
-    nodeNix.typescript
-    nodeNix.typescript-language-server
-    nodeNix.emmet-ls
-    nodeNix.prettier
-    nodeNix.eslint
+    nodejs
+    nodePackages.node2nix
+    nodePackages.vscode-langservers-extracted
+
     nix-convert
   ];
 }
