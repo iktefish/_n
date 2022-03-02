@@ -4,13 +4,13 @@
 
 let
   sources = {
-    "@emmetio/abbreviation-2.2.2" = {
+    "@emmetio/abbreviation-2.2.3" = {
       name = "_at_emmetio_slash_abbreviation";
       packageName = "@emmetio/abbreviation";
-      version = "2.2.2";
+      version = "2.2.3";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@emmetio/abbreviation/-/abbreviation-2.2.2.tgz";
-        sha512 = "TtE/dBnkTCct8+LntkqVrwqQao6EnPAs1YN3cUgxOxTaBlesBCY37ROUAVZrRlG64GNnVShdl/b70RfAI3w5lw==";
+        url = "https://registry.npmjs.org/@emmetio/abbreviation/-/abbreviation-2.2.3.tgz";
+        sha512 = "87pltuCPt99aL+y9xS6GPZ+Wmmyhll2WXH73gG/xpGcQ84DRnptBsI2r0BeIQ0EB/SQTOe2ANPqFqj3Rj5FOGA==";
       };
     };
     "@emmetio/css-abbreviation-2.1.4" = {
@@ -31,31 +31,31 @@ let
         sha512 = "8HqW8EVqjnCmWXVpqAOZf+EGESdkR27odcMMMGefgKXtar00SoYNSryGv//TELI4T3QFsECo78p+0lmalk/CFA==";
       };
     };
-    "@types/node-16.11.19" = {
+    "@types/node-17.0.18" = {
       name = "_at_types_slash_node";
       packageName = "@types/node";
-      version = "16.11.19";
+      version = "17.0.18";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/node/-/node-16.11.19.tgz";
-        sha512 = "BPAcfDPoHlRQNKktbsbnpACGdypPFBuX4xQlsWDE7B8XXcfII+SpOLay3/qZmCLb39kV5S1RTYwXdkx2lwLYng==";
+        url = "https://registry.npmjs.org/@types/node/-/node-17.0.18.tgz";
+        sha512 = "eKj4f/BsN/qcculZiRSujogjvp5O/k4lOW5m35NopjZM/QwLOR075a8pJW5hD+Rtdm2DaCVPENS6KtSQnUD6BA==";
       };
     };
-    "emmet-2.3.5" = {
+    "emmet-2.3.6" = {
       name = "emmet";
       packageName = "emmet";
-      version = "2.3.5";
+      version = "2.3.6";
       src = fetchurl {
-        url = "https://registry.npmjs.org/emmet/-/emmet-2.3.5.tgz";
-        sha512 = "LcWfTamJnXIdMfLvJEC5Ld3hY5/KHXgv1L1bp6I7eEvB0ZhacHZ1kX0BYovJ8FroEsreLcq7n7kZhRMsf6jkXQ==";
+        url = "https://registry.npmjs.org/emmet/-/emmet-2.3.6.tgz";
+        sha512 = "pLS4PBPDdxuUAmw7Me7+TcHbykTsBKN/S9XJbUOMFQrNv9MoshzyMFK/R57JBm94/6HSL4vHnDeEmxlC82NQ4A==";
       };
     };
-    "typescript-4.5.4" = {
+    "typescript-4.5.5" = {
       name = "typescript";
       packageName = "typescript";
-      version = "4.5.4";
+      version = "4.5.5";
       src = fetchurl {
-        url = "https://registry.npmjs.org/typescript/-/typescript-4.5.4.tgz";
-        sha512 = "VgYs2A2QIRuGphtzFV7aQJduJ2gyfTljngLzjpfW9FoYZF6xuw1W0vW9ghCKLfcWrCFxK81CSGRAvS1pn4fIUg==";
+        url = "https://registry.npmjs.org/typescript/-/typescript-4.5.5.tgz";
+        sha512 = "TCTIul70LyWe6IJWT8QSYeA54WQe8EjQFU4wY52Fasj5UKx88LNYKCgBEHcOMOrFF1rKGbD8v/xcNWVUq9SymA==";
       };
     };
     "vscode-jsonrpc-6.0.0" = {
@@ -85,13 +85,13 @@ let
         sha512 = "sdeUoAawceQdgIfTI+sdcwkiK2KU+2cbEYA0agzM2uqaUy2UpnnGHtWTHVEtS0ES4zHU0eMFRGN+oQgDxlD66A==";
       };
     };
-    "vscode-languageserver-textdocument-1.0.3" = {
+    "vscode-languageserver-textdocument-1.0.4" = {
       name = "vscode-languageserver-textdocument";
       packageName = "vscode-languageserver-textdocument";
-      version = "1.0.3";
+      version = "1.0.4";
       src = fetchurl {
-        url = "https://registry.npmjs.org/vscode-languageserver-textdocument/-/vscode-languageserver-textdocument-1.0.3.tgz";
-        sha512 = "ynEGytvgTb6HVSUwPJIAZgiHQmPCx8bZ8w5um5Lz+q5DjP0Zj8wTFhQpyg8xaMvefDytw2+HH5yzqS+FhsR28A==";
+        url = "https://registry.npmjs.org/vscode-languageserver-textdocument/-/vscode-languageserver-textdocument-1.0.4.tgz";
+        sha512 = "/xhqXP/2A2RSs+J8JNXpiiNVvvNM0oTosNVmQnunlKvq9o4mupHOBAnnzH0lwIPKazXKvAKsVp1kr+H/K4lgoQ==";
       };
     };
     "vscode-languageserver-types-3.16.0" = {
@@ -109,22 +109,22 @@ in
   emmet-ls = nodeEnv.buildNodePackage {
     name = "emmet-ls";
     packageName = "emmet-ls";
-    version = "0.2.0";
+    version = "0.2.2";
     src = fetchurl {
-      url = "https://registry.npmjs.org/emmet-ls/-/emmet-ls-0.2.0.tgz";
-      sha512 = "K8/z4yfMW4rTaOevmxyu/IvMX+JTBSjRaNn8qhGOIu1NCPmJ8OcdAb6pYCTDtEo1CrAgiJR2lDtfzz68ytVCyQ==";
+      url = "https://registry.npmjs.org/emmet-ls/-/emmet-ls-0.2.2.tgz";
+      sha512 = "48uAo4iV/Na+cPd/8QTyCtZCo7D569jA0EH/5rqqnSLHDyavb8FgTZsJ3xdS8yRvdWco8XuN/csfU78VKo/dDw==";
     };
     dependencies = [
-      sources."@emmetio/abbreviation-2.2.2"
+      sources."@emmetio/abbreviation-2.2.3"
       sources."@emmetio/css-abbreviation-2.1.4"
       sources."@emmetio/scanner-1.0.0"
-      sources."@types/node-16.11.19"
-      sources."emmet-2.3.5"
-      sources."typescript-4.5.4"
+      sources."@types/node-17.0.18"
+      sources."emmet-2.3.6"
+      sources."typescript-4.5.5"
       sources."vscode-jsonrpc-6.0.0"
       sources."vscode-languageserver-7.0.0"
       sources."vscode-languageserver-protocol-3.16.0"
-      sources."vscode-languageserver-textdocument-1.0.3"
+      sources."vscode-languageserver-textdocument-1.0.4"
       sources."vscode-languageserver-types-3.16.0"
     ];
     buildInputs = globalBuildInputs;
