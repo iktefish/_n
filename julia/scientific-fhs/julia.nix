@@ -1,13 +1,22 @@
-{ stdenv, lib, fetchurl, zlib, glib, xorg, dbus, fontconfig, freetype, libGL }:
-
-let
+{
+  stdenv,
+  lib,
+  fetchurl,
+  zlib,
+  glib,
+  xorg,
+  dbus,
+  fontconfig,
+  freetype,
+  libGL,
+}: let
   makeJulia = version: sha256:
     stdenv.mkDerivation {
       name = "julia-${version}";
       src = fetchurl {
         url = "https://julialang-s3.julialang.org/bin/linux/x64/${
-            lib.versions.majorMinor version
-          }/julia-${version}-linux-x86_64.tar.gz";
+          lib.versions.majorMinor version
+        }/julia-${version}-linux-x86_64.tar.gz";
         inherit sha256;
       };
       installPhase = ''
@@ -38,6 +47,8 @@ let
       ];
     };
 in {
+  julia_173 =
+    makeJulia "1.7.3" "0ff7ypr76xf99h3dmy1xdnkq2xn432qnzihxs72xrd4j5nhlybwv";
   julia_165 =
     makeJulia "1.6.5" "sha256-uP4j7lRyVKL+FL5YcoTtd8eMBsLY6arV/rzg0hyrjiw=";
   julia_16 =

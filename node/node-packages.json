@@ -1,3 +1,6 @@
 [
-    "emmet-ls"
+    "eslint_d",
+    "@fsouza/prettierd",
+    "emmet-ls",
+    "@tailwindcss/language-server"
 ]

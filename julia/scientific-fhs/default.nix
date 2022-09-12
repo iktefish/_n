@@ -1,33 +1,42 @@
-{ lib, pkgs, enableJulia ? true, juliaVersion ? "julia_16", enableConda ? true
-, condaInstallationPath ? "~/.conda", condaJlEnv ? "conda_jl"
-, pythonVersion ? "3.8", enableGraphical ? true, enableNVIDIA ? false
-, enableNode ? true, ... }:
-
-with lib;
-let
+{
+  lib,
+  pkgs,
+  enableJulia ? true,
+  juliaVersion ? "julia_173",
+  enableConda ? true,
+  condaInstallationPath ? "~/.conda",
+  condaJlEnv ? "conda_jl",
+  pythonVersion ? "3.8",
+  enableGraphical ? true,
+  enableNVIDIA ? false,
+  enableNode ? true,
+  ...
+}:
+with lib; let
   standardPackages = pkgs:
     with pkgs;
-    [
-      autoconf
-      binutils
-      clang
-      cmake
-      curl
-      expat
-      gmp
-      gnumake
-      gperf
-      libxml2
-      m4
-      nss
-      openssl
-      stdenv.cc
-      unzip
-      utillinux
-      which
-    ] ++ lib.optional enableNode pkgs.nodejs;
+      [
+        autoconf
+        binutils
+        clang
+        cmake
+        curl
+        expat
+        gmp
+        gnumake
+        gperf
+        libxml2
+        m4
+        nss
+        openssl
+        stdenv.cc
+        unzip
+        utillinux
+        which
+      ]
+      ++ lib.optional enableNode pkgs.nodejs;
 
-  customGr = with pkgs; callPackage ./gr.nix { };
+  customGr = with pkgs; callPackage ./gr.nix {};
 
   graphicalPackages = pkgs:
     with pkgs; [
@@ -43,7 +52,7 @@ let
       ffmpeg
       fontconfig
       freetype
-      gdk_pixbuf
+      gdk-pixbuf
       gettext
       glfw
       glib
@@ -100,13 +109,12 @@ let
     ];
 
   juliaPackages = pkgs: version:
-    with pkgs;
-    let julias = callPackage ./julia.nix { };
-    in [ julias."${version}" ];
+    with pkgs; let
+      julias = callPackage ./julia.nix {};
+    in [julias."${version}"];
 
   condaPackages = pkgs:
-    with pkgs;
-    [ (callPackage ./conda.nix { installationPath = condaInstallationPath; }) ];
+    with pkgs; [(callPackage ./conda.nix {installationPath = condaInstallationPath;})];
 
   targetPkgs = pkgs:
     (standardPackages pkgs)
@@ -142,14 +150,16 @@ let
     export EXTRA_LDFLAGS="-L/lib -L${pkgs.linuxPackages.nvidia_x11}/lib"
   '';
 
-  envvars = std_envvars + optionalString enableGraphical graphical_envvars
+  envvars =
+    std_envvars
+    + optionalString enableGraphical graphical_envvars
     + optionalString enableConda conda_envvars
     + optionalString (enableConda && enableJulia) conda_julia_envvars
     + optionalString enableNVIDIA nvidia_envvars;
 
-  extraOutputsToInstall = [ "man" "dev" ];
+  extraOutputsToInstall = ["man" "dev"];
 
-  multiPkgs = pkgs: with pkgs; [ zlib ];
+  multiPkgs = pkgs: with pkgs; [zlib];
 
   condaInitScript = ''
     conda-install
@@ -165,5 +175,5 @@ let
       extraOutputsToInstall = extraOutputsToInstall;
       profile = envvars;
     };
-
-in fhsCommand
+in
+  fhsCommand
